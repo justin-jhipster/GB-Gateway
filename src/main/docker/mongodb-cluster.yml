@@ -1,0 +1,16 @@
+version: '2'
+services:
+  gbgateway-mongodb:
+    image: mongo:4.0.12
+    ports:
+      - '27017:27017'
+    command: mongos --configdb gbgateway-mongodb-config
+  gbgateway-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  gbgateway-mongodb-config:
+    image: mongo:4.0.12
+    container_name: gbgateway-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

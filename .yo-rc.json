@@ -1,0 +1,46 @@
+{
+  "generator-jhipster": {
+    "applicationType": "gateway",
+    "gitCompany": "",
+    "baseName": "GBGateWay",
+    "packageName": "com.gb.gateway",
+    "packageFolder": "com/gb/gateway",
+    "serverPort": 8082,
+    "serviceDiscoveryType": "eureka",
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.4.1",
+    "jwtSecretKey": "N2Q4OGM1OWY0MjRhN2JiZDgyOWZiMTE4NTZlODZkMjhiZTE4MzU2ZWRkZjhlODdlNTllZjJlZmE3MTFjNThiYWM3NzUzOTY3NmI1ODc5NmY1NDY0MWQ2MDBhMjkyNzJkODhiYmFkNDNlMjllODNiMTIzYjU1ODIxYTRmZTkwODE=",
+    "embeddableLaunchScript": false,
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "blueprints": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "justin-jhipster",
+  "repository-name": "GB-Gateway"
+}
